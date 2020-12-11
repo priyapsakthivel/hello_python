@@ -14,10 +14,10 @@ def subtraction(num3,num2):
     print(sub)
 subtraction(num3,num2)
 def multiply(num4,num2):
-    add= int(num4)*int(num2)
-    print(add)
+    multi= int(num4)*int(num2)
+    print(multi)
 addition(num4,num2)
-def addition(num4,num1):
-    add= int(num4)/int(num1)
-    print(add)
+def division(num4,num1):
+    div= int(num4)/int(num1)
+    print(division)
 addition(num4,num1)
