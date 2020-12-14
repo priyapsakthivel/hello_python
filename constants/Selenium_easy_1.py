@@ -14,7 +14,7 @@ def single_input_field(driver):
     time.sleep(2)
     driver.find_element_by_xpath("//*[@id='get-input']/button").click()
     time.sleep(8)
-    show =driver.find_element_by_id("user-message")
-    print(show.text)
-    driver.get_screenshot_as_file (" C:/Users/Mohan/Pictures/Screenshots "+ show + ".png")
+    show=driver.find_element_by_id("user-message").text
+    print(show)
+    driver.get_screenshot_as_file ("C:/Users/Mohan/Pictures/Screenshots"+show+".png")
 single_input_field(driver)
