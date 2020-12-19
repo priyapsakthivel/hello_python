@@ -16,4 +16,3 @@ def otp_length(driver,otp):
 
 otp = input("please enter otp")
 otp_length(driver,list(otp))
-`
