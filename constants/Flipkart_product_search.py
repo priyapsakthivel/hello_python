@@ -16,5 +16,8 @@ def search(driver,time):
     product = input("please enter a product you want to search")
     time.sleep(4)
     searching.send_keys(product)
-    searching.send_keys(keys.ENTER)
+    driver.find_element_by_xpath("//*[@id='container']/div/div[1]/div[1]/div[2]/div[2]/form/div/button").click()
 search(driver,time)
+def wishlist(driver):
+    driver.execute_script("scrollTo(0,50)")
+wishlist(driver)
