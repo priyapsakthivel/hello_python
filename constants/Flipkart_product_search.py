@@ -19,5 +19,5 @@ def search(driver,time):
     driver.find_element_by_xpath("//*[@id='container']/div/div[1]/div[1]/div[2]/div[2]/form/div/button").click()
 search(driver,time)
 def wishlist(driver):
-    driver.execute_script("scrollTo(0,50)")
+    driver.execute_script("scrollTo(0,150)")
 wishlist(driver)
