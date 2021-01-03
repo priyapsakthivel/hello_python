@@ -22,7 +22,7 @@ for x in car:
 
  a=10
  b=20
- if (int a== int b):
+ if (int a==int b):
      print("its equal")
 
 
