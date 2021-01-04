@@ -9,7 +9,7 @@ def launch(driver):
     driver.maximize_window()
     driver.find_element_by_id()
 launch(driver)
-time.sleep(5)
+time.sleep(7)
 
 def choose_kids(driver):
     driver.find_element_by_id("kid-button").click()
