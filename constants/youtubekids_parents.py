@@ -16,3 +16,11 @@ def choose_parents(driver,time):
     driver.find_element_by_id("next-button").click()
     time.sleep(2)
 choose_parents(driver,time)
+
+def hi_parents(driver,age):
+    for x in range(1,5):
+        driver.find_element_by_id("onboarding-age-gate-digit-"+str(x)).send_keys(age[x-1])
+        time.sleep(30)
+        driver.find_element_by_id("submit-button").click()
+age=input("please enter your age parents")
+hi_parents(driver,list(age))
