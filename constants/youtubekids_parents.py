@@ -47,9 +47,9 @@ notice_to_parent(driver)
 
 def content_experience(driver):
     driver.find_element_by_xpath("/html/body/ytk-app/div/ytk-kids-onboarding-flow-data-v2/div[3]/ytk-kids-corpus-selection-renderer/div/div[2]/div/ytk-kids-age-selection-card-renderer[1]").click()
+    time.sleep(2)
+    driver.find_element_by_xpath("/html/body/ytk-app/ytk-popup-container/paper-dialog/ytk-kids-corpus-selection-modal-renderer/div[1]/div[2]/div[2]/button[1]").click()
 content_experience(driver)
 time.sleep(5)
 
-def preschool(driver):
-    driver.find_element_by_xpath("/html/body/ytk-app/div/ytk-kids-onboarding-flow-data-v2/div[3]/ytk-kids-corpus-selection-renderer/div/div[2]/div/ytk-kids-age-selection-card-renderer[1]").click()
-preschool(driver)
+
