@@ -32,7 +32,24 @@ def video_page_to_text(driver):
     driver.execute_script("scrollTo(0,100)")
     driver.find_element_by_id("show-text-link").click()
     time.sleep(2)
-    driver.execute_script("scrollTo(0,100)")
-    driver.find_element_by_id("next-button").click()
+    driver.execute_script("scrollTo(0,200)")
+    driver.find_element_by_xpath("/html/body/ytk-app/div/ytk-kids-onboarding-flow-data-v2/div[3]/ytk-kids-sign-in-info-renderer/ytk-kids-flow-text-info-renderer/div/div[2]/div/div/button[2]").click()
 video_page_to_text(driver)
 
+def signin(driver):
+    driver.find_element_by_id("skip-button").click()
+signin(driver)
+
+def notice_to_parent(driver):
+    driver.execute_script("scrollTo(0,200)")
+    driver.find_element_by_xpath("/html/body/ytk-app/div/ytk-kids-onboarding-flow-data-v2/div[3]/ytk-kids-onboarding-parental-notice-page-renderer/div/div[2]/div[2]/div/button").click()
+notice_to_parent(driver)
+
+def content_experience(driver):
+    driver.find_element_by_xpath("/html/body/ytk-app/div/ytk-kids-onboarding-flow-data-v2/div[3]/ytk-kids-corpus-selection-renderer/div/div[2]/div/ytk-kids-age-selection-card-renderer[1]").click()
+content_experience(driver)
+time.sleep(5)
+
+def preschool(driver):
+    driver.find_element_by_xpath("/html/body/ytk-app/div/ytk-kids-onboarding-flow-data-v2/div[3]/ytk-kids-corpus-selection-renderer/div/div[2]/div/ytk-kids-age-selection-card-renderer[1]").click()
+preschool(driver)
