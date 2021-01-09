@@ -57,6 +57,14 @@ def search_turnon(driver):
     driver.find_element_by_id("search-on-button").click()
     time.sleep(2)
     driver.execute_script("scrollTo(0,200)")
-    driver.find_element_by_xpath("done-button")
+    driver.find_element_by_id("done-button").click()
 search_turnon(driver)
 
+def search_input(driver):
+    driver.find_element_by_id("input").send_keys("Masha and the bear")
+    driver.find_element_by_id("search-icon-container").click()
+search_input(driver)
+
+def thumbnail(driver):
+    driver.find_element_by_xpath("/html/body/ytk-app/div/ytk-search-response/div[2]/ytk-section-list-renderer/div[1]/ytk-item-section-renderer/div/ytk-compact-video-renderer[1]/a/div[1]/yt-img-shadow/img").click()
+thumbnail(driver)
