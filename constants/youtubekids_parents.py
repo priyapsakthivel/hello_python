@@ -52,4 +52,11 @@ def content_experience(driver):
 content_experience(driver)
 time.sleep(5)
 
+def search_turnon(driver):
+    driver.execute_script("scrollTo(0,200)")
+    driver.find_element_by_id("search-on-button").click()
+    time.sleep(2)
+    driver.execute_script("scrollTo(0,200)")
+    driver.find_element_by_xpath("done-button")
+search_turnon(driver)
 
