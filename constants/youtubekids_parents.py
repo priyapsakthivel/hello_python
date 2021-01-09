@@ -67,4 +67,5 @@ search_input(driver)
 
 def thumbnail(driver):
     driver.find_element_by_xpath("/html/body/ytk-app/div/ytk-search-response/div[2]/ytk-section-list-renderer/div[1]/ytk-item-section-renderer/div/ytk-compact-video-renderer[1]/a/div[1]/yt-img-shadow/img").click()
+    time.sleep(2)
 thumbnail(driver)
