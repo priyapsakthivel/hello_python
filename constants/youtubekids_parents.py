@@ -80,8 +80,10 @@ time.sleep(2)
 def problem(driver):
     lock_problem=driver.find_element_by_id("parental-gate-math-problem")
     print(lock_problem.text)
-    
-    for x in range():
-        driver.find_element_by_xpath("/html/body/ytk-app/ytk-parental-gate/div[2]/div[4]/input["+x+"]").send_keys()
+    multiply = input("please enter the answer of the multiplication")
+    list(multiply)
+    for x in range(1,3):
+        driver.find_element_by_xpath("/html/body/ytk-app/ytk-parental-gate/div[2]/div[4]/input["+str(x)+"]").send_keys(multiply[x-1])
+
 problem(driver)
 
