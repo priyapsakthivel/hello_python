@@ -84,6 +84,10 @@ def problem(driver):
     list(multiply)
     for x in range(1,3):
         driver.find_element_by_xpath("/html/body/ytk-app/ytk-parental-gate/div[2]/div[4]/input["+str(x)+"]").send_keys(multiply[x-1])
-
 problem(driver)
+time.sleep(2)
+
+def submit(driver):
+    driver.find_element_by_xpath("/html/body/ytk-app/ytk-parental-gate/div[2]/div[6]/button[1]").click()
+submit(driver)
 
