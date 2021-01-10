@@ -91,3 +91,4 @@ def submit(driver):
     driver.find_element_by_xpath("/html/body/ytk-app/ytk-parental-gate/div[2]/div[6]/button[1]").click()
 submit(driver)
 
+
