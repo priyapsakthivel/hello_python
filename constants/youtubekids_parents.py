@@ -64,8 +64,24 @@ def search_input(driver):
     driver.find_element_by_id("input").send_keys("Masha and the bear")
     driver.find_element_by_id("search-icon-container").click()
 search_input(driver)
+time.sleep(2)
 
 def thumbnail(driver):
-    driver.find_element_by_xpath("/html/body/ytk-app/div/ytk-search-response/div[2]/ytk-section-list-renderer/div[1]/ytk-item-section-renderer/div/ytk-compact-video-renderer[1]/a/div[1]/yt-img-shadow/img").click()
+    driver.find_element_by_xpath("/html/body/ytk-app/div/ytk-search-response/div[2]/ytk-section-list-renderer/div[1]/ytk-item-section-renderer/div/ytk-compact-video-renderer[1]/a/div[1]/yt-img-shadow").click()
     time.sleep(2)
 thumbnail(driver)
+time.sleep(20)
+
+def lock(driver):
+    driver.find_element_by_xpath("/html/body/ytk-app/ytk-masthead/div/div[2]/div[2]/div[2]/paper-icon-button/iron-icon").click()
+lock(driver)
+time.sleep(2)
+
+def problem(driver):
+    lock_problem=driver.find_element_by_id("parental-gate-math-problem")
+    print(lock_problem.text)
+    
+    for x in range():
+        driver.find_element_by_xpath("/html/body/ytk-app/ytk-parental-gate/div[2]/div[4]/input["+x+"]").send_keys()
+problem(driver)
+
