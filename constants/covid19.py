@@ -13,5 +13,5 @@ def search(driver):
     search_input.send_keys(search_box)
     search_input.send_keys(Keys.ENTER)
     driver.find_element_by_xpath("//*[@id='root']/div/div[3]").click()   #to stop extra suggetion
-    driver.
+
 search(driver)
