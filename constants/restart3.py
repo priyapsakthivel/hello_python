@@ -20,6 +20,12 @@ car=["car1","car2","car3"]
 for x in car:
     print(x)
 
+ a=10
+ b=20
+ if (int a == int b):
+     print("its equal")
+
+
 
 
 

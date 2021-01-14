@@ -20,9 +20,9 @@ def search(driver,time):
 search(driver,time)
 time.sleep(4)
 
-
 def wishlist(driver):
     driver.find_element_by_xpath("//*[@id='container']/div/div[3]/div[2]/div[1]/div[2]/div[2]/div/div[1]/div/a[1]").click()
 wishlist(driver)
 time.sleep(3)
+wishlist(driver)
 

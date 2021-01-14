@@ -10,6 +10,7 @@ def amazonloginpage(emailid,password):
     driver.get("https://www.amazon.com/")
     driver.find_element_by_id("nav-signin-tooltip").click()
     time.sleep(2)
+
     driver.find_element_by_id("ap_email").send_keys(emailid)
     driver.find_element_by_id("continue").click()
     time.sleep(2)
