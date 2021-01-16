@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
+
 driver=webdriver.Edge(executable_path="P:\Webdrivers\msedgedriver")
 def launch(driver):
     driver.get("https://www.covid19india.org/")
