@@ -17,4 +17,5 @@ def search(driver):
     time.sleep(2)
     confirmed=driver.find_element_by_xpath("//*[@id='root']/div/div[3]/div[1]/div[2]/div[1]/div[2]").text
     print("confirmed cases :" + confirmed)
+    time.sleep(2)
 search(driver)
