@@ -15,16 +15,16 @@ def search(driver):
     time.sleep(2)
     driver.find_element_by_xpath("/html/body/div/div/div[3]/div[1]/div[1]/div[1]/div[3]/a/div").click()
     time.sleep(2)
-    confirmed=driver.find_element_by_xpath("/html/body/div/div/div[3]/div[1]/div[2]/div[1]/div[2]").text
+    confirmed = driver.find_element_by_xpath("/html/body/div/div/div[3]/div[1]/div[2]/div[1]/div[2]").text
     print("confirmed cases :" + confirmed)
     time.sleep(2)
-    active=driver.find_element_by_xpath("/html/body/div/div/div[3]/div[1]/div[2]/div[1]/div[3]").text
+    active = driver.find_element_by_xpath("/html/body/div/div/div[3]/div[1]/div[2]/div[1]/div[3]").text
     print("active cases :" + active)
     time.sleep(2)
-    recovered=driver.find_element_by_xpath("/html/body/div/div/div[3]/div[1]/div[2]/div[1]/div[4]").text
+    recovered = driver.find_element_by_xpath("/html/body/div/div/div[3]/div[1]/div[2]/div[1]/div[4]").text
     print("recovered cases :" + recovered)
     time.sleep(2)
-    deceased=driver.find_element_by_xpath("/html/body/div/div/div[3]/div[1]/div[2]/div[1]/div[5]").text
+    deceased = driver.find_element_by_xpath("/html/body/div/div/div[3]/div[1]/div[2]/div[1]/div[5]").text
     print("deceased cases :" + deceased)
     time.sleep(2)
 search(driver)
