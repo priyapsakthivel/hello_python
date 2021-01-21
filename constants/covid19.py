@@ -23,7 +23,7 @@ def search(driver):
     time.sleep(1)
     recovered = driver.find_element_by_xpath("/html/body/div/div/div[3]/div[1]/div[2]/div[1]/div[4]").text
     print("recovered cases :" + recovered)
-    time.sleep(2)
+    time.sleep(1)
     deceased = driver.find_element_by_xpath("/html/body/div/div/div[3]/div[1]/div[2]/div[1]/div[5]").text
     print("deceased cases :" + deceased)
     time.sleep(2)
