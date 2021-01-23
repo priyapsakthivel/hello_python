@@ -5,3 +5,4 @@ def launch(driver):
     driver.get("https://www.covid19india.org/")
     driver.maximize_window()
 launch(driver)
+
