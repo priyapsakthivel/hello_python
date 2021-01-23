@@ -93,4 +93,5 @@ submit(driver)
 
 def account(driver):
     driver.find_element_by_id("account-section-button").click()
+    time.sleep(2)
 account(driver)
