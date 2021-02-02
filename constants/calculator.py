@@ -3,6 +3,7 @@ num2= input("please enter num2")
 def add(num1,num2):
     additon=int(num1)+int(num2)
     print(additon)
+
 add(num1,num2)
 def sub(num1,num2):
     subtractiton=int(num1)-int(num2)
