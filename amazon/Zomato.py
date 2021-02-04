@@ -10,4 +10,5 @@ def launch(driver):
     time.sleep(2)
     driver.find_element_by_xpath("/html/body/div[6]/div/div[2]/section[2]/section/div[1]/div/input").send_keys("9080444947")
     time.sleep(2)
+    driver.find_element_by_xpath("/html/body/div[6]/div/div[2]/section[2]/section/button/span").click()
 launch(driver)
