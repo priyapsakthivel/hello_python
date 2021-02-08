@@ -13,6 +13,8 @@ def launch(driver):
     driver.find_element_by_xpath("/html/body/div[5]/div/div[2]/section[2]/section/button").click()
 launch(driver)
 
-def OTP(driver):
+def otp(driver):
     for x in range(1,7):
-     driver.find_element_by_xpath("/html/body/div[5]/div/div[2]/section[2]/section/div/div/div/input["+x+"]")
+     driver.find_element_by_xpath("/html/body/div[5]/div/div[2]/section[2]/section/div/div/div/input["+str(x)+"]").send_keys(x-1)
+otp(driver)
+
