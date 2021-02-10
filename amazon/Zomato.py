@@ -12,9 +12,9 @@ def launch(driver):
     time.sleep(3)
     driver.find_element_by_xpath("/html/body/div[5]/div/div[2]/section[2]/section/button").click()
 launch(driver)
-
-def otp(driver):
+def otp(driver,otp_mobile):
     for x in range(1,7):
-     driver.find_element_by_xpath("/html/body/div[5]/div/div[2]/section[2]/section/div/div/div/input["+str(x)+"]").send_keys(x-1)
-otp(driver)
+     driver.find_element_by_xpath("/html/body/div[5]/div/div[2]/section[2]/section/div/div/div/input["+str(x)+"]").send_keys(otp_mobile(x-1))
+otp_mobile=input("please enter your phone number")
+otp(driver,list(otp_mobile))
 
