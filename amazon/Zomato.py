@@ -9,7 +9,7 @@ def launch(driver):
     driver.find_element_by_xpath("/html/body/div[1]/div/div[2]/header/nav/ul[2]/li[2]/a").click()
     time.sleep(2)
     driver.find_element_by_xpath("/html/body/div[5]/div/div[2]/section[2]/section/div[1]/div/input").send_keys("9080442336")
-    time.sleep(2)
+    time.sleep(3)
     driver.find_element_by_xpath("/html/body/div[5]/div/div[2]/section[2]/section/button").click()
 launch(driver)
 def otp(driver,otp_mobile):
