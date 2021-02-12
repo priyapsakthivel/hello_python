@@ -15,7 +15,7 @@ launch(driver)
 def otp(driver,otp_mobile):
     for x in range(1,7):
      driver.find_element_by_xpath("/html/body/div[5]/div/div[2]/section[2]/section/div/div/div/input["+str(x)+"]").send_keys(otp_mobile(x-1))
-    time.sleep(4)
+    time.sleep(3)
 
 otp_mobile=input("please enter your phone number")
 otp(driver,list(otp_mobile))
