@@ -9,4 +9,4 @@ class sumup():
         print("sum of first 2 numbers"+int(sum3)+int(sum4));
         print("sum of first 2 numbers"+int(sum3)+int(sum2));
 sumup().sum()
-sumupaddingup()
+sumup().addingup()
