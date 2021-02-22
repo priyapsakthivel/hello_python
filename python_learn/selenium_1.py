@@ -8,3 +8,6 @@ def launch():
 launch()
 def popclose():
     driver.find_element_by_id("at-cv-lightbox-close").click()
+    driver.execute_script("scrollTo(0,100)")
+popclose()
+
