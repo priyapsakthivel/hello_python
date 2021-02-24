@@ -12,6 +12,6 @@ def popclose():
 popclose()
 def message():
     driver.find_element_by_id("user-message").send_keys("goodday")
-    driver.find_element_by_xpath("//button[@contains(class())='btn btn-default']").click()
+    driver.find_element_by_xpath("//*[@id='get-input']/button").click()
 message()
 
