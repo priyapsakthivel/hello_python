@@ -11,6 +11,7 @@ def popclose():
     driver.execute_script("scrollTo(0,100)")
 popclose()
 def message():
-    driver.find_element_by_id("user-message").send_keys()
-    driver
+    driver.find_element_by_id("user-message").send_keys("goodday")
+    driver.find_element_by_xpath("//button[@contains(class())='btn btn-default']").click()
+message()
 
