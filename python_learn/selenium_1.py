@@ -10,4 +10,7 @@ def popclose():
     driver.find_element_by_id("at-cv-lightbox-close").click()
     driver.execute_script("scrollTo(0,100)")
 popclose()
+def message():
+    driver.find_element_by_id("user-message").send_keys()
+    driver
 
