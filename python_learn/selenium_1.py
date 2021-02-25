@@ -16,5 +16,5 @@ def message():
 message()
 def displayed_message():
     displayed=driver.find_element_by_id("display").text
-    print(displayed)
+    print("message diplayed in screen="displayed)
 displayed_message()
