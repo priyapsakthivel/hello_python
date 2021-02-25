@@ -14,4 +14,7 @@ def message():
     driver.find_element_by_id("user-message").send_keys("goodday")
     driver.find_element_by_xpath("//*[@id='get-input']/button").click()
 message()
-
+def displayed_message():
+    displayed=driver.find_element_by_id("display").text
+    print(displayed)
+displayed_message()
