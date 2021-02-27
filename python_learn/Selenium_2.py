@@ -22,3 +22,7 @@ def twoinputfield(driver,a,b):
     time.sleep(2)
     driver.find_element_by_xpath("//*[@id='gettotal']/button").click()
 twoinputfield(driver,a,b)
+def display_message(driver):
+    message=driver.find_element_by_id("displayvalue").text
+    print(message)
+display_message(driver)
