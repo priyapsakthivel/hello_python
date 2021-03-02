@@ -19,7 +19,7 @@ b=input("please enter any number2")
 def twoinputfield(driver,a,b):
     driver.find_element_by_id("sum1").send_keys(a)
     driver.find_element_by_id("sum2").send_keys(b)
-    time.sleep(2)
+    time.sleep(3)
     driver.find_element_by_xpath("//*[@id='gettotal']/button").click()
 twoinputfield(driver,a,b)
 def display_message(driver):
