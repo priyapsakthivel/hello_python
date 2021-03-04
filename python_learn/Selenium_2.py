@@ -25,4 +25,5 @@ twoinputfield(driver,a,b)
 def display_message(driver):
     message=driver.find_element_by_id("displayvalue").text
     print(message)
+    time.sleep(3)
 display_message(driver)
