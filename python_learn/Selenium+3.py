@@ -8,3 +8,4 @@ launching(driver)
 def bootstrap(driver):
     driver.execute_script("scrollTo(0,200)")
     driver.find_element_by_xpath("//*[@id='sandbox-container1']/div/span").click()
+bootstrap()
