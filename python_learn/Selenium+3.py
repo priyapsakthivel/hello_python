@@ -13,5 +13,7 @@ def bootstrap(driver):
     driver.find_element_by_xpath("/html/body/div[3]/div[1]/table/tfoot/tr[1]/th").click()
     driver.find_element_by_xpath("//*[@id='sandbox-container1']/div/input").text()
     time.sleep(10)
+    driver.find_element_by_xpath("//*[@id='sandbox-container1']/div/span").click()
+
 bootstrap(driver)
-def
+
