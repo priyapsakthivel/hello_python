@@ -1,3 +1,5 @@
+import time
+
 from selenium import webdriver
 
 driver=webdriver.Edge(executable_path="P:\Webdrivers\msedgedriver")
@@ -9,6 +11,7 @@ def bootstrap(driver):
     driver.execute_script("scrollTo(0,200)")
     driver.find_element_by_xpath("//*[@id='sandbox-container1']/div/span").click()
     driver.find_element_by_xpath("/html/body/div[3]/div[1]/table/tfoot/tr[1]/th").click()
-    todays=driver.find_element_by_xpath("//*[@id='sandbox-container1']/div/input").text
-    print(todays)
+    driver.find_element_by_xpath("//*[@id='sandbox-container1']/div/input").text()
+    time.sleep(10)
 bootstrap(driver)
+def
