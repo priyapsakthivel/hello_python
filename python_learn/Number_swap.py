@@ -5,4 +5,4 @@ def numbers(x,y):
     print(y)
     x,y=y,x
     print("a=",x)
-    print("b=",b)
+    print("b=",y)
