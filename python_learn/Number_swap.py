@@ -6,3 +6,4 @@ def numbers(x,y):
     x,y=y,x
     print("a=",x)
     print("b=",y)
+numbers(x,y)
