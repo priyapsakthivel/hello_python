@@ -4,3 +4,8 @@ if (number1%2==0):
     print("its an even number")
 else:
     print("the given number is odd")
+
+if (number2%2==0):
+    print("its an even number")
+else:
+    print("the given number is odd")
