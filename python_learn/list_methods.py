@@ -5,7 +5,7 @@ print(car)
 car[1:2]=("skoda","benze")
 print(car)
 
-car.insert(2,"cityv")
+car.insert(2,"bmw")
 print(car)
 
 car.append("i10")
