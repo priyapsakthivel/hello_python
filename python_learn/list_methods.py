@@ -9,3 +9,4 @@ car.insert(2,"cityv")
 print(car)
 
 car.append("i10")
+print(car)
