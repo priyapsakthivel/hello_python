@@ -6,5 +6,5 @@ def launch(driver):
 launch(driver)
 def i_am_parent(driver):
     driver.find_element_by_id("parent-button").click()
-    driver.
+    driver.find_element_by_id("next-button").click()
 i_am_parent(driver)
