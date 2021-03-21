@@ -11,3 +11,5 @@ def i_am_parent(driver):
     driver.find_element_by_id("parent-button").click()
     driver.find_element_by_id("next-button").click()
 i_am_parent(driver)
+def hi_parent(driver):
+    driver.find_element_by_id("onboarding-age-gate-digit-"+)
