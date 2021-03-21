@@ -5,3 +5,5 @@ car={"brand":"bmw",
 print(car)
 car["colour"]="white"
 print(car)
+sdf=car.keys()
+print(sdf)
