@@ -12,7 +12,7 @@ class youtubekids():
 
     launch(driver)
 
-    time.sleep(2)
+    time.sleep(3)
 
     def i_am_parent(driver):
         driver.find_element_by_id("parent-button").click()
