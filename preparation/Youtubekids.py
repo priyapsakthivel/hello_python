@@ -28,5 +28,5 @@ class youtubekids():
                 "/html/body/ytk-app/div/ytk-kids-onboarding-flow-data-v2/div[3]/ytk-kids-onboarding-age-gate-renderer/div/div[4]/input["+str(x)+"]").send_keys(
                 year(x - 1))
 
-    year = input("please enter the year of birth")
+    year = int(input("please enter the year of birth"))
     hi_parent(driver,list(year))
