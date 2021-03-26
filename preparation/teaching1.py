@@ -8,5 +8,5 @@ c=32
 def add():print(a+b)
 def sub():print(a-b)
 def multiply():print(a*c)
-print(a/b)
+def divide():print(a/b)
 print(a%b)
