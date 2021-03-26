@@ -6,7 +6,7 @@ a=12
 b=21
 c=32
 def add():print(a+b)
-print(a-b)
+def sub():print(a-b)
 print(a*c)
 print(a/b)
 print(a%b)
