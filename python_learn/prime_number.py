@@ -9,7 +9,7 @@ for i in range(2,11):
             print("its odd number")
     else:
         print(i,"its a composite number")
-        if (i % 2 == 1):
+        if (i % 2 == 0):
             print(i, "its an even number")
         else:
             print("its odd number")
