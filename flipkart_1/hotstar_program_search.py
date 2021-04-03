@@ -12,6 +12,6 @@ driver.find_element_by_id("searchField").send_keys(Keys.ENTER)
 time.sleep(2)
 driver.find_element_by_xpath("//*[@id='app']/div[2]/div/div[1]/div[2]/div/div/div/div/div[2]/div[2]/div/div/article/a/div[2]").click()
 time.sleep(20)
-driver.quit()
+#driver.quit()
 
 
