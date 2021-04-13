@@ -1,5 +1,5 @@
 def hello_world():
-    for i in range(3):
+    for i in range(4):
         value = hello_alien(i)
         if (value):
             break
