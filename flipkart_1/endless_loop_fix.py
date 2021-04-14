@@ -7,7 +7,7 @@ def hello_world():
             continue
 
 def hello_alien(n):
-    if n == 6:
+    if n == 3:
         print("im in True")
         return True
     else:
